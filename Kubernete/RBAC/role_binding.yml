@@ -3,7 +3,7 @@ kind: RoleBinding
 metadata:
   name: my-sa-role-binding
   namespace: default
-subject:
+subjects:
 - kind: ServiceAccount
   name: my-sa
 roleRef:
