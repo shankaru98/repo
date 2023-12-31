@@ -4,6 +4,6 @@ metadata:
   name: my-sa-role
   namespace: default
 rules:
-- apiGroup: [""]
+- apiGroups: [""]
   resources: ["pods", "services"]
   verbs: ["get", "list"]
