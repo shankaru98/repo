@@ -3,5 +3,5 @@ kind: Secret
 metadata:
   name: my-sa-token
   annotations:
-    kubernetes.io/service-account-token: my-sa
+    kubernetes.io/service-account-token.name: my-sa
 type: kubernetes.io/service-account-token
