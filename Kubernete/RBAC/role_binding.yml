@@ -8,4 +8,5 @@ subjects:
   name: my-sa
 roleRef:
   apiGroup: rbac.authorization.k8s.io
-  kind: my-sa-role
+  kind: Role
+  name: my-sa-role
