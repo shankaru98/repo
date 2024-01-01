@@ -3,6 +3,6 @@ kind: ClusterRole
 metadata:
   name: my-sa-role
 rules:
-- apiGroup: [""]
+- apiGroups: [""]
   resources: ["pods", "services", "nodes"]
   verbs: ["get", "list"]
