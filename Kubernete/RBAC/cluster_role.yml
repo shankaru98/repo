@@ -4,5 +4,5 @@ metadata:
   name: my-sa-role
 rules:
 - apiGroup: [""]
-  resources: ["pods", "services"]
+  resources: ["pods", "services", "nodes"]
   verbs: ["get", "list"]
