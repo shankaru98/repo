@@ -4,5 +4,5 @@ metadata:
   name: my-sa-cluster-role
 rules:
 - apiGroups: [""]
-  resources: ["pods", "services", "nodes", "namespace"]
+  resources: ["pods", "services", "nodes"]
   verbs: ["get", "list", "watch"]
