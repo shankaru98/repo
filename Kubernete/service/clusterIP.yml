@@ -7,6 +7,6 @@ spec:
   selector:
     app: ip-app
   ports:
-  - protocol: http
+  - name: http
     port: 30000
     targetPort: 8080
