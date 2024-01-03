@@ -13,7 +13,7 @@ spec:
         app: ip-app
     spec:
       containers:
-      - name: ip_app
+      - name: ip-app
         image: shankaru/ip_app
         ports:
         - containerPort: 8080
