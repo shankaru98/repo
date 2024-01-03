@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: ip-app
-    image: shankru/ip_app:v1
+    image: shankaru/ip_app:v1
     ports:
     - containerPort: 80
     env:
