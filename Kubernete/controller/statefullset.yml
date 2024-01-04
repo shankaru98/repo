@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: StatefullSet
+metadata:
+  name: ip-app-statefullset
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ip-app-statefullset
+  template:
+    metadata:
+      labels:
+        app: ip-app-statefullset
+    spec:
+      containers:
+      - name: ip-app
+        image: shankaru/ip_app:v1
+        ports:
+        - containerPort: 8080
