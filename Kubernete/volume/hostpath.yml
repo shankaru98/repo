@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: ip-app
+    image: shankaru/ip_app:v1
+    ports:
+    - containerPort: 80
+    volumeMount:
+    - name: hostpath-vol
+      mountPath: /app/volume
+  volumes:
+  - name: hostpath-vol
+    hostpath:
+      path: /home/ubuntu/pod_data
+      type: DirectoryOrCreate
