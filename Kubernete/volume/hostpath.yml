@@ -13,6 +13,6 @@ spec:
       mountPath: /app/volume
   volumes:
   - name: hostpath-vol
-    hostpath:
+    hostPath:
       path: /home/ubuntu/pod_data
       type: DirectoryOrCreate
