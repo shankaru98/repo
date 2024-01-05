@@ -13,7 +13,6 @@ spec:
       mountPath: '/app/volume/secret'
     - name: configmap-vol
       mountPath: '/app/volume/configmap'
-
   volumes:
   - name: secret-vol
     secret:
