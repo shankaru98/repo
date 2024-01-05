@@ -8,7 +8,7 @@ spec:
     image: shankaru/ip_app:v1
     ports:
     - containerPort: 80
-    volumeMount:
+    volumeMounts:
     - name: secret-vol
       mountPath: '/app/volume/secret'
     - name: configmap-vol
