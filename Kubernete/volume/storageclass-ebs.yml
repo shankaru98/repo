@@ -8,5 +8,5 @@ parameters:
   iopsPerGB: "10"
   fstype: ext4
 allowVolumeExpansion: true
-reclaimPollicy: Retain
+reclaimPolicy: Retain
 
