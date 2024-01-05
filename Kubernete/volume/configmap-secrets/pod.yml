@@ -19,4 +19,4 @@ spec:
       secretName: my-secret-vol
   - name: configmap-vol
     configMap:
-      secretName: my-cm-vol
+      configName: my-cm-vol
