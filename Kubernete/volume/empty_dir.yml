@@ -14,7 +14,7 @@ spec:
   - name: busybox
     image: busybox
     command: ["/bin/sh"]
-    arg: ["-c", "while true; do ls /var/log/nginx; cat /var/log/nginx/access.log; sleep 5; done"]
+    args: ["-c", "while true; do ls /var/log/nginx; cat /var/log/nginx/access.log; sleep 5; done"]
     volumeMounts:
     - name: emptydir-vol
       mountPath: /var/log/nginx
