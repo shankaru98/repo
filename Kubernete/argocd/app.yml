@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: go-app-argo-config
-  namespace: argocd
+  namespace: default
 spec:
   project: my-k8s
   source:
