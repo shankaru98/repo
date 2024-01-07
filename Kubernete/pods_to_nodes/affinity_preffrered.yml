@@ -8,12 +8,12 @@ spec:
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 1
         preference:
-        - matchExpressions:
-        - key: environment
-          operator: In
-          values:
-          - qa
-          - stagging
+          matchExpressions:
+          - key: environment
+            operator: In
+            values:
+            - qa
+            - stagging
   containers:
   - name: ip-app
     image: shankaru/ip_app:v1
