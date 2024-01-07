@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: with-node-affinity
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: environement
+            operator: In
+            values:
+            - test
+            - prod
+  containers:
+  - name: ip-app
+    image: shankaru/ip_app:v1
+    ports:
+    - containerPort: 80
