@@ -11,8 +11,8 @@ spec:
           - key: environment
             operator: In
             values:
-            - test
-            - prod
+            - qa
+            - stagging
   containers:
   - name: ip-app
     image: shankaru/ip_app:v1
