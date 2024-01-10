@@ -16,5 +16,5 @@ spec:
         matchLabels:
           app: frontend
   ports:
-  - protocol: http
+  - name: http
     port: 30000
