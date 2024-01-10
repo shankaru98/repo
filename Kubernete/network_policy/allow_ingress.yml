@@ -15,6 +15,6 @@ spec:
       podSelector:
         matchLabels:
           app: frontend
-  ports:
+  port:
   - protocol: tcp
     port: 30000
