@@ -6,7 +6,7 @@ spec:
   initContainers:
   - name: busybox
     image: busybox
-    command: ["/bin/bash"]
+    command: ["/bin/sh"]
     args: ["-c", "echo 'This is busybox init-container'; sleep 20"]
   containers:
   - name: ip-app
