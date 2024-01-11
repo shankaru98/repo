@@ -7,7 +7,7 @@ spec:
   - name: busybox
     image: busybox
     command: ["/bin/bash"]
-    args: ["-c", "sleep 10"]
+    args: ["-c", "echo 'This is busybox init-container'; sleep 20"]
   containers:
   - name: ip-app
     image: shankaru/ip_app:v1
