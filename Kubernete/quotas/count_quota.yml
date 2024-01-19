@@ -4,5 +4,5 @@ metadata:
   name: couta-quota
 spec:
   hard:
-    count/pods: 4
+    count/pods: 8
     count/deployments.apps: 2
