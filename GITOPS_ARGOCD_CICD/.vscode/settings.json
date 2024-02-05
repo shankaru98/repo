@@ -6,7 +6,7 @@
             "name": "gitops-argocd_CI",
             
         }
-    }
+    },
     "jenkins-runner.hostConfigs": {
         "jenkins-master": {
             "url": "http://3.82.125.42:8080",
